@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3255EE29B28A7A0020313D /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3255ED29B28A7A0020313D /* GameService.swift */; };
+		4D3255F029B290AD0020313D /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3255EF29B290AD0020313D /* PlayerService.swift */; };
+		4D3255F229B295440020313D /* WorldViewController+WallServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3255F129B295440020313D /* WorldViewController+WallServiceDelegate.swift */; };
+		4D3255F429B2956F0020313D /* WorldViewController+UICollisionBehaviorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3255F329B2956F0020313D /* WorldViewController+UICollisionBehaviorDelegate.swift */; };
+		4D90D21129B288E000A8ED02 /* WallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D90D21029B288E000A8ED02 /* WallService.swift */; };
+		4DBFBDE129B2675700450FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFBDE029B2675700450FE3 /* AppDelegate.swift */; };
+		4DBFBDE329B2675700450FE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFBDE229B2675700450FE3 /* SceneDelegate.swift */; };
+		4DBFBDEA29B2675800450FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBFBDE929B2675800450FE3 /* Assets.xcassets */; };
+		4DBFBDED29B2675800450FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBFBDEB29B2675800450FE3 /* LaunchScreen.storyboard */; };
+		4DBFBDFA29B2683D00450FE3 /* MedjayJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFBDF929B2683D00450FE3 /* MedjayJump.swift */; };
+		4DBFBDFC29B2687500450FE3 /* WorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFBDFB29B2687500450FE3 /* WorldViewController.swift */; };
+		4DBFBDFE29B2688900450FE3 /* WorldView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBFBDFD29B2688900450FE3 /* WorldView.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D3255ED29B28A7A0020313D /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		4D3255EF29B290AD0020313D /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		4D3255F129B295440020313D /* WorldViewController+WallServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorldViewController+WallServiceDelegate.swift"; sourceTree = "<group>"; };
+		4D3255F329B2956F0020313D /* WorldViewController+UICollisionBehaviorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorldViewController+UICollisionBehaviorDelegate.swift"; sourceTree = "<group>"; };
+		4D90D21029B288E000A8ED02 /* WallService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallService.swift; sourceTree = "<group>"; };
+		4DBFBDDD29B2675700450FE3 /* Medjay Jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medjay Jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBFBDE029B2675700450FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DBFBDE229B2675700450FE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DBFBDE929B2675800450FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DBFBDEC29B2675800450FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DBFBDEE29B2675800450FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DBFBDF929B2683D00450FE3 /* MedjayJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedjayJump.swift; sourceTree = "<group>"; };
+		4DBFBDFB29B2687500450FE3 /* WorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewController.swift; sourceTree = "<group>"; };
+		4DBFBDFD29B2688900450FE3 /* WorldView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorldView.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DBFBDDA29B2675700450FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D90D20F29B288D700A8ED02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D3255ED29B28A7A0020313D /* GameService.swift */,
+				4D3255EF29B290AD0020313D /* PlayerService.swift */,
+				4D90D21029B288E000A8ED02 /* WallService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4DBFBDD429B2675700450FE3 = {
+			isa = PBXGroup;
+			children = (
+				4DBFBDDF29B2675700450FE3 /* Medjay Jump */,
+				4DBFBDDE29B2675700450FE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DBFBDDE29B2675700450FE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DBFBDDD29B2675700450FE3 /* Medjay Jump.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DBFBDDF29B2675700450FE3 /* Medjay Jump */ = {
+			isa = PBXGroup;
+			children = (
+				4DBFBDF629B267C100450FE3 /* Main */,
+				4D90D20F29B288D700A8ED02 /* Services */,
+				4DBFBDF529B2677700450FE3 /* Views */,
+				4DBFBDE929B2675800450FE3 /* Assets.xcassets */,
+				4DBFBDEE29B2675800450FE3 /* Info.plist */,
+				4DBFBDEB29B2675800450FE3 /* LaunchScreen.storyboard */,
+			);
+			path = "Medjay Jump";
+			sourceTree = "<group>";
+		};
+		4DBFBDF529B2677700450FE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DBFBDFD29B2688900450FE3 /* WorldView.storyboard */,
+				4D3255F329B2956F0020313D /* WorldViewController+UICollisionBehaviorDelegate.swift */,
+				4D3255F129B295440020313D /* WorldViewController+WallServiceDelegate.swift */,
+				4DBFBDFB29B2687500450FE3 /* WorldViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DBFBDF629B267C100450FE3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4DBFBDE029B2675700450FE3 /* AppDelegate.swift */,
+				4DBFBDF929B2683D00450FE3 /* MedjayJump.swift */,
+				4DBFBDE229B2675700450FE3 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DBFBDDC29B2675700450FE3 /* Medjay Jump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DBFBDF129B2675800450FE3 /* Build configuration list for PBXNativeTarget "Medjay Jump" */;
+			buildPhases = (
+				4DBFBDD929B2675700450FE3 /* Sources */,
+				4DBFBDDA29B2675700450FE3 /* Frameworks */,
+				4DBFBDDB29B2675700450FE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Medjay Jump";
+			productName = "Medjay Jump";
+			productReference = 4DBFBDDD29B2675700450FE3 /* Medjay Jump.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DBFBDD529B2675700450FE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Michael Artes";
+				TargetAttributes = {
+					4DBFBDDC29B2675700450FE3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4DBFBDD829B2675700450FE3 /* Build configuration list for PBXProject "Medjay Jump" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DBFBDD429B2675700450FE3;
+			productRefGroup = 4DBFBDDE29B2675700450FE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DBFBDDC29B2675700450FE3 /* Medjay Jump */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DBFBDDB29B2675700450FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBFBDEA29B2675800450FE3 /* Assets.xcassets in Resources */,
+				4DBFBDED29B2675800450FE3 /* LaunchScreen.storyboard in Resources */,
+				4DBFBDFE29B2688900450FE3 /* WorldView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DBFBDD929B2675700450FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBFBDE129B2675700450FE3 /* AppDelegate.swift in Sources */,
+				4D3255EE29B28A7A0020313D /* GameService.swift in Sources */,
+				4DBFBDFA29B2683D00450FE3 /* MedjayJump.swift in Sources */,
+				4D3255F029B290AD0020313D /* PlayerService.swift in Sources */,
+				4DBFBDE329B2675700450FE3 /* SceneDelegate.swift in Sources */,
+				4D90D21129B288E000A8ED02 /* WallService.swift in Sources */,
+				4D3255F429B2956F0020313D /* WorldViewController+UICollisionBehaviorDelegate.swift in Sources */,
+				4D3255F229B295440020313D /* WorldViewController+WallServiceDelegate.swift in Sources */,
+				4DBFBDFC29B2687500450FE3 /* WorldViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DBFBDEB29B2675800450FE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DBFBDEC29B2675800450FE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DBFBDEF29B2675800450FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DBFBDF029B2675800450FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DBFBDF229B2675800450FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P957785596;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medjay Jump/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artes.Medjay-Jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DBFBDF329B2675800450FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P957785596;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medjay Jump/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artes.Medjay-Jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DBFBDD829B2675700450FE3 /* Build configuration list for PBXProject "Medjay Jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBFBDEF29B2675800450FE3 /* Debug */,
+				4DBFBDF029B2675800450FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DBFBDF129B2675800450FE3 /* Build configuration list for PBXNativeTarget "Medjay Jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBFBDF229B2675800450FE3 /* Debug */,
+				4DBFBDF329B2675800450FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DBFBDD529B2675700450FE3 /* Project object */;
+}
